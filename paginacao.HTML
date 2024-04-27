@@ -1,0 +1,57 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paginação</title>
+<style>
+
+    .pagination {
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+
+    .pagination li {
+        margin-right: 10px;
+    }
+
+    .pagination li a {
+        text-decoration: none;
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        color: #333;
+    }
+ 
+    .pagination li a:hover {
+        background-color: #f0f0f0;
+    }
+   
+    .pagination li:first-child a {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+ 
+    .pagination li:last-child a {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .pagination .prev-next {
+        margin-right: 10px;
+    }
+</style>
+</head>
+<body>
+
+<ul class="pagination">
+    <li class="prev-next"><a href="#">&lt;</a></li> <!-- Botão para esquerda -->
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li class="prev-next"><a href="#">&gt;</a></li> <!-- Botão para direita -->
+</ul>
+
+</body>
+</html>
